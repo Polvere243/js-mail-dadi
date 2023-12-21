@@ -29,6 +29,14 @@ message += "</p>";
 
 outcome.innerHTML = message;
 
+// secondo esercizio
+
+const addresses = [
+    coddoproffuqua-7201@yopmail.com,
+    rerolloisura-7708@yopmail.com,
+    gretrabreffeucroi-9997@yopmail.com,
+    lessissuprajei-9280@yopmail.com
+]
 
 
 
