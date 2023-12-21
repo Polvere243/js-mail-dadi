@@ -7,8 +7,21 @@ let computerDie = Math.floor(Math.random() * (max + 1 - min)) + min;
 
 console.log(userDie, computerDie);
 // collaziono i due risultati
+
+// preparo un messaggio per comunicare il risultato
+
+let youWin = "<p>"; 
+let youLose = "<p>";
+
 if(userDie > computerDie){
-    console.log("hai vinto");
+    youWin += "Daje, hai vinto, seeeeeeeeeee!";
 } else {
-    console.log("hai perso");
+    youLose += "Fra', riprova, ché hai perso:*(";
 }
+
+youWin += "</p>";
+
+youLose += "</p>";
+
+element.innerHTML = youWin;
+element.innerHTML = youLose;
