@@ -1,6 +1,6 @@
 // recupero l'elemento dalla pagina
 const paragraph = document.getElementById("outcome");
-
+const diceNumber = document.getElementById( "roll");
 // dichiaro due costanti: una per il valore minimo e una per il valore massimo dei dadi
 const max = 6;
 const min = 1;
@@ -8,11 +8,15 @@ const min = 1;
 let userDie = Math.floor(Math.random() * (max + 1 - min)) + min;
 let computerDie = Math.floor(Math.random() * (max + 1 - min)) + min;
 
-console.log(userDie, computerDie);
+const numbers = `<p>  ${userDie} - ${computerDie}  </p>`;
+
+diceNumber.innerHTML = numbers;
+
 // collaziono i due risultati
 
+
 // preparo un messaggio per comunicare il risultato
-/* 
+
 let message = "<p>"; 
 
 if(userDie > computerDie){
@@ -23,7 +27,9 @@ if(userDie > computerDie){
 
 message += "</p>";
 
-outcome.innerHTML = message; */
+outcome.innerHTML = message;
 
-const message = document.createElement("p");
-console.log(message);
+
+
+
+
