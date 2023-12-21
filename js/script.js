@@ -12,7 +12,7 @@ console.log(userDie, computerDie);
 // collaziono i due risultati
 
 // preparo un messaggio per comunicare il risultato
-
+/* 
 let message = "<p>"; 
 
 if(userDie > computerDie){
@@ -23,4 +23,7 @@ if(userDie > computerDie){
 
 message += "</p>";
 
-outcome.innerHTML = message;
+outcome.innerHTML = message; */
+
+const message = document.createElement("p");
+console.log(message);
