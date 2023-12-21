@@ -1,3 +1,6 @@
+// recupero l'elemento dalla pagina
+const paragraph = document.getElementById("outcome");
+
 // dichiaro due costanti: una per il valore minimo e una per il valore massimo dei dadi
 const max = 6;
 const min = 1;
@@ -10,18 +13,14 @@ console.log(userDie, computerDie);
 
 // preparo un messaggio per comunicare il risultato
 
-let youWin = "<p>"; 
-let youLose = "<p>";
+let message = "<p>"; 
 
 if(userDie > computerDie){
-    youWin += "Daje, hai vinto, seeeeeeeeeee!";
+    message += "Daje, hai vinto, seeeeeeeeeee!";
 } else {
-    youLose += "Fra', riprova, ché hai perso:*(";
+    message += "Fra', riprova, ché hai perso:*(";
 }
 
-youWin += "</p>";
+message += "</p>";
 
-youLose += "</p>";
-
-element.innerHTML = youWin;
-element.innerHTML = youLose;
+outcome.innerHTML = message;
