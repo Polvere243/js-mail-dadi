@@ -32,10 +32,11 @@ Consigli del giorno:
 Buon lavoro e buon divertimento! :faccia_leggermente_sorridente:
 
 Gioco dei dadi:
-1 - dichiarare una costante e usare la formula per generare casualmente un numero da 1-6 per l'utente;
-2 - ripetere il punto, ma per il computer;
-3 - comparare i due risultati per avere un vincitore;
-4 - usare il template literal e il DOM API ( da commentare successivamente) per stampare il risultato in pagina.
+1 - dichiarare due costanti per avere i valori massimo e minimo dei dadi; 
+2 - usare la formula per generare casualmente un numero da 1-6 per l'utente;
+3 - ripetere il punto 2, ma per il computer;
+4 - comparare i due risultati per avere un vincitore;
+5 - usare il template literal e il DOM API (da commentare successivamente) per stampare il risultato in pagina.
 
 Falso log-in:
 
