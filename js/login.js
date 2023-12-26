@@ -14,4 +14,14 @@ button.addEventListener ("click", function () {
         alert("Non hai inserito nessun indirizzo, OCCCHIO!");
         return;
     }
+
+    let isUserAllowed = false;
+    for (let i = 0; i < allowedEmails; i++){
+        if (!isUserAllowed = true){
+            alert("L'e-mail non è consentita");
+            return;
+        } else {
+            alert("L'email è consentita");
+        }
+    } 
 })
