@@ -43,5 +43,5 @@ Falso log-in:
 1 - creare un input e-mail e un bottone nell'html;
 2 - recuperare il bottone e agganciarlo coll'addEventListener;
 4 - creare un array di e-mail consentite;
-5 - verificare se l'e-mail inserita nell'input sia consentite o meno;
+5 - verificare se l'e-mail inserita nell'input sia consentita o meno;
 6 - quale che sia il risultato dev'essere mostrato in pagina, magari con un alert.
