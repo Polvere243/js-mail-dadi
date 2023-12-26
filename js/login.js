@@ -11,7 +11,7 @@ button.addEventListener ("click", function () {
 
     // verifico almeno che il campo non sia vuoto
     if(!userEmail){
-        alert("Non hai inserito nessun indirizzo, OCCCHIO!");
+        alert("Non hai inserito nessun indirizzo, OCCHIO!");
         return;
     }
 
