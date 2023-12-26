@@ -30,30 +30,3 @@ paragraph.innerText = message;
 })
 
 
-// secondo esercizio
-/* 
-const addresses = [
-    coddoproffuqua@yopmail.com,
-    rerolloisura@yopmail.com,
-    gretrabreffeucroi@yopmail.com,
-    lessissuprajei@yopmail.com
-] */
-
-const email = document.getElementById("email-form");
-
-const checkButton = document.getElementById("check-me");
-
-checkButton.addEventListener ("click", function() {
-    if(!email){
-        alert("Devi inserire un indirizzo e-mail valido");
-        return;
-    } else {
-        const input = email.value.trim();
-    }
-        
-    
-
-    
-})
-
-
