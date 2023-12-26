@@ -1,43 +1,59 @@
 // recupero l'elemento dalla pagina
+const button = document.getElementById("button");
 const paragraph = document.getElementById("outcome");
 const diceNumber = document.getElementById( "roll");
 // dichiaro due costanti: una per il valore minimo e una per il valore massimo dei dadi
 const max = 6;
 const min = 1;
 // faccio generare due numeri casuali da 1 a 6
-let userDie = Math.floor(Math.random() * (max + 1 - min)) + min;
-let computerDie = Math.floor(Math.random() * (max + 1 - min)) + min;
+button.addEventListener("click", function() {
+    const userDie = Math.floor(Math.random() * (max + 1 - min)) + min;
+    const computerDie = Math.floor(Math.random() * (max + 1 - min)) + min;
 
-const numbers = `<p>  ${userDie} - ${computerDie}  </p>`;
+const numbers = `${userDie} - ${computerDie}`;
 
-diceNumber.innerHTML = numbers;
+diceNumber.innerText = numbers;
 
 // collaziono i due risultati
 
 
 // preparo un messaggio per comunicare il risultato
 
-let message = "<p>"; 
+let message = "Che sfiga, siete pari XD"; 
 
 if(userDie > computerDie){
-    message += "Daje, hai vinto, seeeeeeeeeee!";
-} else {
-    message += "Fra', riprova, ché hai perso:*(";
+    message = "Daje, hai vinto, seeeeeeeeeee!";
+} else if (userDie < computerDie) {
+    message = "Fra', riprova, ché hai perso:*(";
 }
+paragraph.innerText = message;
+})
 
-message += "</p>";
-
-outcome.innerHTML = message;
 
 // secondo esercizio
-
+/* 
 const addresses = [
-    coddoproffuqua-7201@yopmail.com,
-    rerolloisura-7708@yopmail.com,
-    gretrabreffeucroi-9997@yopmail.com,
-    lessissuprajei-9280@yopmail.com
-]
+    coddoproffuqua@yopmail.com,
+    rerolloisura@yopmail.com,
+    gretrabreffeucroi@yopmail.com,
+    lessissuprajei@yopmail.com
+] */
 
+const email = document.getElementById("email-form");
 
+const checkButton = document.getElementById("check-me");
+
+checkButton.addEventListener ("click", function() {
+    if(!email){
+        alert("Devi inserire un indirizzo e-mail valido");
+        return;
+    } else {
+        const input = email.value.trim();
+    }
+        
+    
+
+    
+})
 
 
