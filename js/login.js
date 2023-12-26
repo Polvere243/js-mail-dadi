@@ -16,12 +16,11 @@ button.addEventListener ("click", function () {
     }
 
     let isUserAllowed = false;
-    for (let i = 0; i < allowedEmails; i++){
-        if (isUserAllowed = true){
-            alert("L'e-mail è consentita");
-        } else {
-            alert("L'email è consentita");
-            return;
-        }
+    for (let i = 0; i < allowedEmails.length && !isUserAllowed; i++){
+        
+        if(userEmail === allowedEmails[i]){
+            alert("Accesso concesso");
+            isUserAllowed = true;
+        } 
     } 
 })
