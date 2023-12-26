@@ -7,7 +7,7 @@ const allowedEmails = ["pincopanco@gmail.com", "danielercoli@gmail.com", "bepper
 button.addEventListener ("click", function () {
     // recupero i dati dall'input
     const userEmail = form.value.trim();
-    console.log(userEmail);
+    
 
     // verifico almeno che il campo non sia vuoto
     if(!userEmail){
@@ -17,11 +17,11 @@ button.addEventListener ("click", function () {
 
     let isUserAllowed = false;
     for (let i = 0; i < allowedEmails; i++){
-        if (!isUserAllowed = true){
-            alert("L'e-mail non è consentita");
-            return;
+        if (isUserAllowed = true){
+            alert("L'e-mail è consentita");
         } else {
             alert("L'email è consentita");
+            return;
         }
     } 
 })
