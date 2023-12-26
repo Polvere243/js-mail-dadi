@@ -5,8 +5,13 @@ const allowedEmails = ["pincopanco@gmail.com", "danielercoli@gmail.com", "bepper
 // al click sul bottone recupero il valore dall'input
 
 button.addEventListener ("click", function () {
+    // recupero i dati dall'input
     const userEmail = form.value.trim();
     console.log(userEmail);
 
-    
+    // verifico almeno che il campo non sia vuoto
+    if(!userEmail){
+        alert("Non hai inserito nessun indirizzo, OCCCHIO!");
+        return;
+    }
 })
